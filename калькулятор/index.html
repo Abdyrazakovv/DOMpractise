@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="block" display: inline-block; style="border: 2px solid gray; width: 200px;
+        height: 300px;">
+
+           <center>Площадь: <br> 
+        <input type="text"  id='ploshad' style="border: 2px solid gray; width: 100px;
+            height: 20px; margin:auto;">
+            
+        
+            <center>Периметор:</center> 
+            <input type="text"  id='perimetr' style="border: 2px solid gray; width: 100px;
+            height: 20px; margin:auto;">
+            <br><br>
+            <center>длина: <br>
+                <input type="text"  id="dlina"><br><br>
+            <center>высота: <br>
+                <input type="text"  id="vysota"><br><br>
+
+                <input id="result" type="submit" value="результат">
+
+            </center> 
+    </div>
+
+    <div class="block" style="border: 2px solid gray; width: 200px;
+    height: 300px;">
+
+       <center>Площадь: <br> 
+    <input type="text"  id='ploshad' style="border: 2px solid gray; width: 100px;
+        height: 20px; margin:auto;">
+        
+    
+        <center>Периметор:</center> 
+        <input type="text"  id='perimetr' style="border: 2px solid gray; width: 100px;
+        height: 20px; margin:auto;">
+        <br><br>
+        <center>длина: <br>
+            <input type="text"  id="dlina"><br><br>
+        <center>высота: <br>
+            <input type="text"  id="vysota"><br><br>
+
+            <input id="result" type="submit" value="результат">
+
+        </center> 
+</div>
+
+<div class="block" style="border: 2px solid gray; width: 200px;
+height: 300px;">
+
+   <center>Площадь: <br> 
+<input type="text"  id='ploshad' style="border: 2px solid gray; width: 100px;
+    height: 20px; margin:auto;">
+    
+
+    <center>Периметор:</center> 
+    <input type="text"  id='perimetr' style="border: 2px solid gray; width: 100px;
+    height: 20px; margin:auto;">
+    <br><br>
+    <center>длина: <br>
+        <input type="text"  id="dlina"><br><br>
+    <center>высота: <br>
+        <input type="text"  id="vysota"><br><br>
+
+        <input id="result" type="submit" value="результат">
+
+    </center> 
+</div>
+
+
+    <script>
+        let pl = document.querySelector('#ploshad');
+        let per = document.querySelector('#perimetr');
+        let dlin = document.querySelector('#dlina');
+        let vys = document.querySelector('#vysota');
+        let res = document.querySelector('#result');
+
+
+        res.addEventListener('click', function() {
+            pl.value = dlin.value * vys.value
+            per.value = (dlin.value * 2) + (vys.value *2) 
+        })
+    </script>
+
+</body>
+</html>
